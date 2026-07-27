@@ -13,32 +13,37 @@ function abrirInvitacion() {
 }
 
 let fotos = [
-"carrusel/foto1.jpeg",
-"carrusel/foto2.jpeg",
-"carrusel/foto3.jpeg",
-"carrusel/foto4.jpeg",
-"carrusel/foto5.jpeg",
-"carrusel/foto6.jpeg",
-"carrusel/foto7.jpeg",
-"carrusel/foto8.jpeg",
-"carrusel/foto9.jpeg",
-"carrusel/foto10.jpeg",
-"carrusel/foto11.jpeg",
-"carrusel/foto12.jpeg",
-"carrusel/foto13.jpeg",
-"carrusel/foto14.jpeg",
-"carrusel/foto15.jpeg"
-]; numero = 0;
+    "carrusel/foto1.jpeg",
+    "carrusel/foto2.jpeg",
+    "carrusel/foto3.jpeg",
+    "carrusel/foto4.jpeg",
+    "carrusel/foto5.jpeg",
+    "carrusel/foto6.jpeg",
+    "carrusel/foto7.jpeg",
+    "carrusel/foto8.jpeg",
+    "carrusel/foto9.jpeg",
+    "carrusel/foto10.jpeg",
+    "carrusel/foto11.jpeg",
+    "carrusel/foto12.jpeg",
+    "carrusel/foto13.jpeg",
+    "carrusel/foto14.jpeg",
+    "carrusel/foto15.jpeg"
+];
 
-setInterval(function(){
+let numero = 0;
+
+setInterval(function () {
 
     numero++;
 
-    if(numero >= fotos.length){
+    if (numero >= fotos.length) {
         numero = 0;
     }
 
-    document.getElementById("fotoCarrusel").src =
-    "carrusel/foto " + numero + ".jpeg";
+    const imagen = document.getElementById("fotoCarrusel");
+
+    if (imagen) {
+        imagen.src = fotos[numero];
+    }
 
 }, 3000);
