@@ -23,3 +23,24 @@ setInterval(function(){
     document.getElementById("segundos").textContent = segundos;
 
 },1000);
+const elementos = document.querySelectorAll(".animar");
+
+function mostrarElementos() {
+
+    elementos.forEach(elemento => {
+
+        const posicion = elemento.getBoundingClientRect().top;
+
+        const pantalla = window.innerHeight;
+
+        if (posicion < pantalla - 100) {
+            elemento.classList.add("visible");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", mostrarElementos);
+
+mostrarElementos();
