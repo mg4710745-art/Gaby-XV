@@ -102,9 +102,9 @@ button{
 
 button:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-5px) scale(1.03);
 
-    box-shadow:0 15px 35px rgba(184,134,11,.4);
+    box-shadow:0 20px 35px rgba(184,134,11,.4);
 
 }
 .oculto{
@@ -528,6 +528,82 @@ GALERÍA
     width:45px;
 
     height:45px;
+
+}
+
+}
+/*==========================
+DECORACIÓN PORTADA
+==========================*/
+
+.inicio{
+    position:relative;
+    overflow:hidden;
+}
+
+.flor{
+
+    position:absolute;
+
+    font-size:45px;
+
+    animation:flotar 6s ease-in-out infinite;
+
+    opacity:.75;
+
+}
+
+.flor1{
+
+    top:8%;
+    left:5%;
+
+}
+
+.flor2{
+
+    top:12%;
+    right:8%;
+
+    animation-delay:1s;
+
+}
+
+.flor3{
+
+    bottom:15%;
+    left:8%;
+
+    animation-delay:2s;
+
+}
+
+.flor4{
+
+    bottom:10%;
+    right:5%;
+
+    animation-delay:3s;
+
+}
+
+@keyframes flotar{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0px);
 
 }
 
