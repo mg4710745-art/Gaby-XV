@@ -11,3 +11,18 @@ function abrirInvitacion(){
     });
 
 }
+
+let numero = 1;
+
+setInterval(function(){
+
+    numero++;
+
+    if(numero > 15){
+        numero = 1;
+    }
+
+    document.getElementById("fotoCarrusel").src =
+    "carrusel/FOTO " + numero + ".jpeg";
+
+}, 3000);
