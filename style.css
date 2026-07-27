@@ -131,3 +131,51 @@ margin:20px auto;
     box-shadow:0 10px 30px rgba(0,0,0,.2);
     transition:1s;
 }
+.contador{
+
+    padding:70px 20px;
+    text-align:center;
+
+}
+
+.contador h2{
+
+    color:#b8860b;
+    font-size:38px;
+    margin-bottom:35px;
+
+}
+
+.tiempo{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.caja{
+
+    background:white;
+    width:110px;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(184,134,11,.25);
+
+}
+
+.caja span{
+
+    font-size:42px;
+    font-weight:bold;
+    color:#b8860b;
+
+}
+
+.caja p{
+
+    margin-top:10px;
+    font-size:18px;
+
+}
