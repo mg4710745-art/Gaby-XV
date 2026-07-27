@@ -43,13 +43,17 @@ max-width:500px;
 
 h1{
 
-font-size:70px;
-color:#b8860b;
+    font-family:'Cormorant Garamond', serif;
 
-margin:10px;
+    font-size:90px;
+
+    color:#b8860b;
+
+    letter-spacing:6px;
+
+    margin:0;
 
 }
-
 
 h2{
 
