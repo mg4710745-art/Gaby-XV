@@ -1,8 +1,8 @@
 body{
-margin:0;
-font-family: Georgia, serif;
-background:#fff8fa;
-color:#7a3b52;
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(180deg,#fff8fa,#fffdf8);
+    color:#6d4b5a;
 }
 
 
