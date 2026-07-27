@@ -1,15 +1,19 @@
-function abrirInvitacion() {
+function abrirInvitacion(){
 
     let musica = document.getElementById("musica");
 
-    if (musica) {
+    if(musica){
         musica.play();
     }
 
-    document.getElementById("invitacion").style.display = "block";
+    const invitacion = document.getElementById("invitacion");
 
-    document.getElementById("invitacion").scrollIntoView({
-        behavior: "smooth"
+    invitacion.classList.remove("oculto");
+
+    invitacion.classList.add("mostrar");
+
+    invitacion.scrollIntoView({
+        behavior:"smooth"
     });
 
 }
