@@ -1,4 +1,4 @@
-function abrirInvitacion(){
+function abrirInvitacion() {
 
     let musica = document.getElementById("musica");
 
