@@ -403,3 +403,16 @@ h3{
     font-size:28px;
 
 }
+.linea-dorada{
+
+    width:120px;
+
+    height:3px;
+
+    background:linear-gradient(to right,#b8860b,#f5deb3,#b8860b);
+
+    margin:20px auto 30px;
+
+    border-radius:10px;
+
+}
