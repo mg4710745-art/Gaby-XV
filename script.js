@@ -1,30 +1,86 @@
 function abrirInvitacion() {
-    alert("El botón funciona");
-}
-const fechaXV = new Date("2026-11-15T18:00:00");
 
-setInterval(function(){
+    let musica = document.getElementById("musica");
+
+    if (musica) {
+        musica.play();
+    }
+
+    document.getElementById("invitacion").style.display = "block";
+
+    document.getElementById("invitacion").scrollIntoView({
+        behavior: "smooth"
+    });
+
+}
+
+// ======================
+// CARRUSEL
+// ======================
+
+let fotos = [
+    "carrusel/foto1.jpeg",
+    "carrusel/foto2.jpeg",
+    "carrusel/foto3.jpeg",
+    "carrusel/foto4.jpeg",
+    "carrusel/foto5.jpeg",
+    "carrusel/foto6.jpeg",
+    "carrusel/foto7.jpeg",
+    "carrusel/foto8.jpeg",
+    "carrusel/foto9.jpeg",
+    "carrusel/foto10.jpeg",
+    "carrusel/foto11.jpeg",
+    "carrusel/foto12.jpeg",
+    "carrusel/foto13.jpeg",
+    "carrusel/foto14.jpeg",
+    "carrusel/foto15.jpeg"
+];
+
+let numero = 0;
+
+function mostrarFoto() {
+    document.getElementById("fotoCarrusel").src = fotos[numero];
+}
+
+function siguienteFoto() {
 
     numero++;
 
-    if(numero >= fotos.length){
+    if (numero >= fotos.length) {
         numero = 0;
     }
 
-    document.getElementById("fotoCarrusel").src = fotos[numero];
+    mostrarFoto();
+}
 
-},3000);
+function anteriorFoto() {
+
+    numero--;
+
+    if (numero < 0) {
+        numero = fotos.length - 1;
+    }
+
+    mostrarFoto();
+}
+
+setInterval(siguienteFoto, 3000);
+
+// ======================
+// CUENTA REGRESIVA
+// ======================
+
+const fechaXV = new Date("2026-11-15T18:00:00");
+
+setInterval(function () {
 
     const ahora = new Date();
 
     const diferencia = fechaXV - ahora;
 
     const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-
     const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
     const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-
     const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
     document.getElementById("dias").textContent = dias;
@@ -32,7 +88,12 @@ setInterval(function(){
     document.getElementById("minutos").textContent = minutos;
     document.getElementById("segundos").textContent = segundos;
 
-},1000);
+}, 1000);
+
+// ======================
+// ANIMACIONES
+// ======================
+
 const elementos = document.querySelectorAll(".animar");
 
 function mostrarElementos() {
@@ -41,9 +102,7 @@ function mostrarElementos() {
 
         const posicion = elemento.getBoundingClientRect().top;
 
-        const pantalla = window.innerHeight;
-
-        if (posicion < pantalla - 100) {
+        if (posicion < window.innerHeight - 100) {
             elemento.classList.add("visible");
         }
 
