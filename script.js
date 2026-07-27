@@ -12,7 +12,7 @@ function abrirInvitacion() {
 
 }
 
-letlet fotos=[
+let fotos = [
 "carrusel/foto1.jpeg",
 "carrusel/foto2.jpeg",
 "carrusel/foto3.jpeg",
