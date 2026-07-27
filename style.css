@@ -96,7 +96,9 @@ button{
 
 button:hover{
 
-transform:scale(1.05);
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(184,134,11,.4);
 
 }
 .oculto{
