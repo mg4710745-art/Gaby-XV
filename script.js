@@ -5,6 +5,16 @@ const fechaXV = new Date("2026-11-15T18:00:00");
 
 setInterval(function(){
 
+    numero++;
+
+    if(numero >= fotos.length){
+        numero = 0;
+    }
+
+    document.getElementById("fotoCarrusel").src = fotos[numero];
+
+},3000);
+
     const ahora = new Date();
 
     const diferencia = fechaXV - ahora;
