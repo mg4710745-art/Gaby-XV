@@ -416,3 +416,24 @@ h3{
     border-radius:10px;
 
 }
+/*==========================
+ANIMACIONES
+==========================*/
+
+.animar{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all 1s ease;
+
+}
+
+.animar.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
