@@ -23,6 +23,6 @@ setInterval(function(){
     }
 
     document.getElementById("fotoCarrusel").src =
-    "carrusel/FOTO " + numero + ".jpeg";
+    "carrusel/foto " + numero + ".jpeg";
 
 }, 3000);
