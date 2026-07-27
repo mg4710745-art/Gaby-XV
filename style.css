@@ -437,3 +437,98 @@ ANIMACIONES
     transform:translateY(0);
 
 }
+/*==========================
+GALERÍA
+==========================*/
+
+.galeria{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.carrusel{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.carrusel img{
+
+    width:100%;
+
+    max-width:650px;
+
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    border:6px solid white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+    transition:.5s;
+
+}
+
+.flecha{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#b8860b;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+.flecha:hover{
+
+    transform:scale(1.1);
+
+}
+
+@media(max-width:700px){
+
+.carrusel{
+
+    gap:10px;
+
+}
+
+.carrusel img{
+
+    height:320px;
+
+}
+
+.flecha{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+}
