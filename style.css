@@ -179,3 +179,53 @@ margin:20px auto;
     font-size:18px;
 
 }
+.ubicacion{
+
+    padding:80px 20px;
+    text-align:center;
+
+}
+
+.ubicacion h2{
+
+    color:#b8860b;
+    font-size:38px;
+
+}
+
+.ubicacion h3{
+
+    font-size:28px;
+    margin-top:15px;
+
+}
+
+.mapa{
+
+    max-width:800px;
+    margin:35px auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.boton-mapa{
+
+    display:inline-block;
+    margin-top:25px;
+    background:#b8860b;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.boton-mapa:hover{
+
+    transform:scale(1.05);
+
+}
