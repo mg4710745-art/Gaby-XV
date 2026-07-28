@@ -714,3 +714,63 @@ CONFIRMACIÓN
     font-size:20px;
 
 }
+/*==========================
+DISEÑO RESPONSIVE
+==========================*/
+
+@media (max-width:768px){
+
+    .contenido{
+        width:90%;
+        padding:30px 20px;
+    }
+
+    h1{
+        font-size:60px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    h3{
+        font-size:22px;
+    }
+
+    .datos p{
+        font-size:16px;
+    }
+
+    .carrusel img{
+        width:95%;
+        height:300px;
+    }
+
+    .tiempo{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .caja{
+        padding:15px;
+    }
+
+    iframe{
+        height:280px;
+    }
+
+    .card-vestimenta,
+    .confirmacion{
+        width:90%;
+        margin:auto;
+    }
+
+    #formulario input,
+    #formulario select,
+    #formulario textarea,
+    button{
+        font-size:16px;
+    }
+
+}
