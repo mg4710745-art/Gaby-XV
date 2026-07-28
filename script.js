@@ -117,3 +117,48 @@ function mostrarElementos() {
 window.addEventListener("scroll", mostrarElementos);
 
 mostrarElementos();
+// ======================
+// FORMULARIO
+// ======================
+
+const urlScript = "https://script.google.com/macros/s/AKfycbyT0DGN3OMxZUIisdR6F6M7GSv-O4NsloH_o2AJxEv9E5qIMDJxQtJIltn9EvRaxrp5GA/exec";
+
+document.getElementById("formulario").addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const datos = {
+
+        nombre: document.getElementById("nombre").value,
+
+        asistencia: document.getElementById("asistencia").value,
+
+        personas: document.getElementById("personas").value,
+
+        mensaje: document.getElementById("mensaje").value
+
+    };
+
+    try{
+
+        await fetch(urlScript,{
+
+            method:"POST",
+
+            body:JSON.stringify(datos)
+
+        });
+
+        document.getElementById("respuesta").innerHTML =
+        "✅ ¡Gracias! Tu asistencia ha sido registrada.";
+
+        document.getElementById("formulario").reset();
+
+    }catch(error){
+
+        document.getElementById("respuesta").innerHTML =
+        "❌ Ocurrió un error. Inténtalo nuevamente.";
+
+    }
+
+});
