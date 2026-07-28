@@ -655,3 +655,62 @@ transform:scale(1);
 }
 
 }
+/*==========================
+CONFIRMACIÓN
+==========================*/
+
+.confirmacion{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+#formulario{
+
+    max-width:600px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+#formulario input,
+#formulario select,
+#formulario textarea{
+
+    padding:16px;
+
+    border-radius:15px;
+
+    border:1px solid #ddd;
+
+    font-size:18px;
+
+}
+
+#formulario textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+#respuesta{
+
+    margin-top:25px;
+
+    color:#b8860b;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+}
