@@ -70,6 +70,7 @@ function anteriorFoto() {
 
 setInterval(siguienteFoto, 3000);
 
+
 // ======================
 // CUENTA REGRESIVA
 // ======================
